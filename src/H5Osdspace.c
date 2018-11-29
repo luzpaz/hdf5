@@ -220,7 +220,7 @@ done:
 	instead of just four bytes.
 
   	Robb Matzke, 1998-07-20
-        Added a version number and reformatted the message for aligment.
+        Added a version number and reformatted the message for alignment.
 
         Raymond Lu
         April 8, 2004

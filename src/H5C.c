@@ -796,7 +796,7 @@ H5C_prep_for_file_close(H5F_t *f)
          *
          * 2) Since the FSM settle routines are only invoked once during
          *    file close, invoking them now will prevent their invocation
-         *    during a flush, and thus avoid any resulting entrie dirties,
+         *    during a flush, and thus avoid any resulting entry dirties,
          *    deletions, insertion, or moves during the flush.
          */
         if(H5C__serialize_cache(f) < 0)
@@ -1447,7 +1447,7 @@ H5C_insert_entry(H5F_t *             f,
          * Finally, we usually don't check to see if the cache is
          * oversized at the end of an unprotect.  As a result, it is
          * possible to have a vastly oversized cache with no protected
-         * entries as long as all the protects preceed the unprotects.
+         * entries as long as all the protects precede the unprotects.
          *
          * Since items 1 and 2 are not changing any time soon, I see
          * no point in worrying about the third.
@@ -2447,7 +2447,7 @@ H5C_protect(H5F_t *		f,
              * Finally, we usually don't check to see if the cache is
              * oversized at the end of an unprotect.  As a result, it is
              * possible to have a vastly oversized cache with no protected
-             * entries as long as all the protects preceed the unprotects.
+             * entries as long as all the protects precede the unprotects.
              *
              * Since items 1, 2, and 3 are not changing any time soon, I
              * see no point in worrying about the fourth.
@@ -4619,7 +4619,7 @@ H5C__autoadjust__ageout__evict_aged_out_entries(H5F_t *f, hbool_t write_permitte
 
         /* for now at least, don't bother to maintain the minimum clean size,
          * as the cache should now be less than its maximum size.  Due to
-         * the vaguries of the cache size reduction algorthim, we may not
+         * the vaguries of the cache size reduction algorithm, we may not
          * reduce the size of the cache.
          *
          * If we do, we will calculate a new minimum clean size, which will
@@ -7664,7 +7664,7 @@ done:
  *			To cork the object
  *			Return error if the object is already corked
  *		H5C__UNCORK:
- *			To uncork the obejct
+ *			To uncork the object
  *			Return error if the object is not corked
  * 		H5C__GET_CORKED:
  *			To retrieve the cork status of an object in
@@ -8250,7 +8250,7 @@ H5C__serialize_ring(H5F_t *f, H5C_ring_t ring)
      * and serialize an entry a second time.
      *
      * These possible actions result in the following modfications to 
-     * tha basic algorithm:
+     * the basic algorithm:
      *
      * 1) In the event of an entry expunge, eviction or removal, we must 
      *    restart the scan as it is possible that the next entry in our 
@@ -8504,14 +8504,14 @@ done:
  *
  * Purpose:     Serialize an entry and generate its image.
  *
- * Note:	This may cause the entry to be re-sized and/or moved in
+ * Note:        This may cause the entry to be re-sized and/or moved in
  *              the cache.  
  *
- *              As we will not update the metadata cache's data structures 
- *              until we we finish the write, we must touch up these 
- *              data structures for size and location changes even if we 
- *              are about to delete the entry from the cache (i.e. on a 
- *              flush destroy).
+ *              As we will not update the metadata cache's data structures
+ *              until we finish the write, we must touch up these data
+ *              structures for size and location changes even if we are
+ *              about to delete the entry from the cache (i.e. on a flush
+ *              destroy).
  *
  * Return:      Non-negative on success/Negative on failure
  *

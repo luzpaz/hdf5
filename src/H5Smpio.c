@@ -71,7 +71,7 @@ static hsize_t bigio_count = H5S_MAX_MPI_COUNT;
 /*-------------------------------------------------------------------------
  * Function:  H5S_mpio_set_bigio_count
  *
- * Purpose:   Allow us to programatically change the switch point
+ * Purpose:   Allow us to programmatically change the switch point
  *            when we utilize derived datatypes.  This is of
  *            particular interest for allowing nightly testing
  *
@@ -1082,7 +1082,7 @@ H5S_obtain_datatype(const hsize_t *down, H5S_hyper_span_t *span,
     MPI_Datatype          *inner_type = NULL;
     hbool_t inner_types_freed = FALSE;          /* Whether the inner_type MPI datatypes have been freed */
     hbool_t span_type_valid = FALSE;            /* Whether the span_type MPI datatypes is valid */
-    hbool_t large_block = FALSE;                /* Wether the block length is larger than 32 bit integer */
+    hbool_t large_block = FALSE;                /* Whether the block length is larger than 32 bit integer */
     int                   *blocklen = NULL;
     MPI_Aint              *disp = NULL;
     H5S_hyper_span_t      *tspan = NULL;        /* Temporary pointer to span tree node */

@@ -408,7 +408,7 @@ static const hbool_t H5F_def_coll_md_write_flag_g = H5F_ACS_COLL_MD_WRITE_FLAG_D
 static const H5AC_cache_image_config_t H5F_def_mdc_initCacheImageCfg_g = H5F_ACS_META_CACHE_INIT_IMAGE_CONFIG_DEF;  /* Default metadata cache image settings */
 static const size_t H5F_def_page_buf_size_g = H5F_ACS_PAGE_BUFFER_SIZE_DEF;      /* Default page buffer size */
 static const unsigned H5F_def_page_buf_min_meta_perc_g = H5F_ACS_PAGE_BUFFER_MIN_META_PERC_DEF;      /* Default page buffer minimum metadata size */
-static const unsigned H5F_def_page_buf_min_raw_perc_g = H5F_ACS_PAGE_BUFFER_MIN_RAW_PERC_DEF;      /* Default page buffer mininum raw data size */
+static const unsigned H5F_def_page_buf_min_raw_perc_g = H5F_ACS_PAGE_BUFFER_MIN_RAW_PERC_DEF;      /* Default page buffer minimum raw data size */
 
 
 /*-------------------------------------------------------------------------
@@ -2297,7 +2297,7 @@ done:
  *
  *      Currently, the only two valid combinations for this routine are:
  *      LOW = H5F_FORMAT_EARLIEST and HIGH = H5F_FORMAT_LATEST (the default
- *      setting, which creates objects with the ealiest version possible for
+ *      setting, which creates objects with the earliest version possible for
  *      each object, but no upper limit on the version allowed to be created if
  *      a newer version of an object's format is required to support a feature
  *      requested with an HDF5 library API routine), and LOW = H5F_FORMAT_LATEST
@@ -2313,7 +2313,7 @@ done:
  * Note: Eventually we want to add more values to the H5F_libver_t
  *      enumerated type that indicate library release values where the file
  *      format was changed (like "H5F_FORMAT_1_2_0" for the file format changes
- *      in the 1.2.x release branch and possily even "H5F_FORMAT_1_4_2" for
+ *      in the 1.2.x release branch and possibly even "H5F_FORMAT_1_4_2" for
  *      a change mid-way through the 1.4.x release branch, etc).
  *
  *      Adding more values will allow applications to make settings like the

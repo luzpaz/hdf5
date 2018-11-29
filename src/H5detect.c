@@ -1580,7 +1580,7 @@ static int verify_signal_handlers(int signum, void (*handler)(int))
         }
         else {
             if(val==signum) {
-                /* return from signum handler. Record a sucess. */
+                /* return from signum handler. Record a success. */
                 nsuccesses++;
             }
             else {

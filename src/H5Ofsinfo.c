@@ -167,7 +167,7 @@ H5O_fsinfo_decode(H5F_t *f, H5O_t H5_ATTR_UNUSED *open_oh,
         H5F_DECODE_LENGTH(f, p, fsinfo->threshold);     /* Free-space section threshold */
 
         H5F_DECODE_LENGTH(f, p, fsinfo->page_size); /* File space page size */
-        UINT16DECODE(p, fsinfo->pgend_meta_thres);  /* Page end metdata threshold */
+        UINT16DECODE(p, fsinfo->pgend_meta_thres);  /* Page end metadata threshold */
         H5F_addr_decode(f, &p, &(fsinfo->eoa_pre_fsm_fsalloc)); /* EOA before free-space header and section info */
 
         /* Decode addresses of free space managers, if persisting */

@@ -298,7 +298,7 @@ H5O__mdci_delete(H5F_t *f, H5O_t *open_oh, void *_mesg)
          * manager issue is in use, file space for the non-empty self
          * referential free space managers was also allocated from VFD
          * layer at the end of file.  Since these allocations directly
-         * preceeded the cache image allocation they should be directly
+         * preceded the cache image allocation they should be directly
          * adjacent to the cache image block at the end of file.
          *
          * In this case, just call H5MF_tidy_self_referential_fsm_hack().

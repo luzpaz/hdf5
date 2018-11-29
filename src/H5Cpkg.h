@@ -979,7 +979,7 @@ if ( ( ( ( (head_ptr) == NULL ) || ( (tail_ptr) == NULL ) ) &&             \
  *
  ***********************************************************************/
 
-/* H5C__HASH_TABLE_LEN is defined in H5Cpkg.h.  It mut be a power of two. */
+/* H5C__HASH_TABLE_LEN is defined in H5Cpkg.h.  It must be a power of two. */
 
 #define H5C__HASH_MASK		((size_t)(H5C__HASH_TABLE_LEN - 1) << 3)
 

@@ -257,7 +257,7 @@ H5D_top_term_package(void)
  *
  * Return:   Success:    Positive if anything was done that might
  *                affect other interfaces; zero otherwise.
- *            Failure:    Negative.
+ *           Failure:    Negative.
  *-------------------------------------------------------------------------
  */
 int
@@ -381,7 +381,7 @@ done:
  *
  * Return:
  *              Success:        Non-negative
- *              Failture:       Negative
+ *              Failure:        Negative
  *-------------------------------------------------------------------------
  */
 herr_t

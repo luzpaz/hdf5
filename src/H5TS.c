@@ -20,7 +20,7 @@
 
 /* Module specific data structures */
 
-/* cancelability structure */
+/* cancellability structure */
 typedef struct H5TS_cancel_struct {
     int previous_state;
     unsigned int cancel_count;
@@ -233,9 +233,9 @@ H5TS_mutex_unlock(H5TS_mutex_t *mutex)
  *    Creates a cancelation counter for a thread if it is the first time
  *    the thread is entering the library.
  *
- *    if counter value is zero, then set cancelability type of the thread
+ *    if counter value is zero, then set cancellability type of the thread
  *    to PTHREAD_CANCEL_DISABLE as thread is entering the library and store
- *    the previous cancelability type into cancelation counter.
+ *    the previous cancellability type into cancelation counter.
  *    Increase the counter value by 1.
  *
  * PROGRAMMER: Chee Wai LEE
@@ -296,8 +296,8 @@ H5TS_cancel_count_inc(void)
  *    0 on success and a non-zero error code on error.
  *
  * DESCRIPTION
- *    If counter value is one, then set cancelability type of the thread
- *    to the previous cancelability type stored in the cancelation counter.
+ *    If counter value is one, then set cancellability type of the thread
+ *    to the previous cancellability type stored in the cancelation counter.
  *    (the thread is leaving the library).
  *
  *    Decrement the counter value by 1.

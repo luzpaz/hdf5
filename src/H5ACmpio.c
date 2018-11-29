@@ -1625,8 +1625,7 @@ done:
  *		argument sounds circular, but think of it in the sense of
  *		a recursive proof).
  *
- *		If this this list is empty, we are done, and the function 
- *		returns
+ *		If this list is empty, we are done, and the function returns.
  *
  *		Otherwise, after the sorted list dirty metadata entries is 
  *		constructed, each process uses the same algorithm to assign 

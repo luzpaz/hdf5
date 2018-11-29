@@ -78,7 +78,7 @@ extern "C" {
  *
  *      *** DEPRECATED *** Use H5Fstart/stop logging functions instead
  *
- *     The trace file is a debuging feature that allow the capture of
+ *     The trace file is a debugging feature that allow the capture of
  *     top level metadata cache requests for purposes of debugging and/or
  *     optimization.  This field should normally be set to FALSE, as
  *     trace file collection imposes considerable overhead.
@@ -125,7 +125,7 @@ extern "C" {
  *    H5C_incr__off ) && ( decr_mode == H5C_decr__off )).  There
  *    is no logical reason why this should be so, but it simplifies
  *    implementation and testing, and I can't think of any reason
- *    why it would be desireable.  If you can think of one, I'll
+ *    why it would be desirable.  If you can think of one, I'll
  *    revisit the issue.
  *
  * set_initial_size: Boolean flag indicating whether the size of the

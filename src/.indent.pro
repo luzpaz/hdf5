@@ -12,7 +12,7 @@
 -ncdb /* Don't put comment delimiters on their own lines */
 -cdw  /* "Cuddle" while statements onto the same line as the closing do statement's brace */
 -nce  /* Don't "Cuddle" else statements onto the same line as the closing if statement's brace */
--ci8  /* Align continued code 8 spaces from initial indention */
+-ci8  /* Align continued code 8 spaces from initial indentation */
 -cli4 /* Indent case statements 4 spaces to right of switch statement */
 -cp0  /* Start comments after pre-processor directives immediately after the directive */
 -ncs  /* Don't put a space between a cast operator and it's object */
@@ -23,7 +23,7 @@
 -nfca /* Don't format comments on their own line */
 -hnl  /* Honor existing new-lines in long boolean statements */
 -i4   /* Indent space spaces */
--ip8  /* Don't add any extra indention for nested parentheses */
+-ip8  /* Don't add any extra indentation for nested parentheses */
 -l78  /* Try to break long lines in column 78 */
 -lc78 /* Try to break long comment lines in column 78 */
 -nlp  /* Don't align lines continued onto further lines with the opening parentheses */

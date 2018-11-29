@@ -377,7 +377,7 @@ done:
  *
  * Modifications:
  *              Raymond Lu
- *              Wednesday, Febuary 9, 2005
+ *              Wednesday, February 9, 2005
  *              Made a copy of original datatype and do sorting and search
  *              on that copy, to protect the original order of members.
  *-------------------------------------------------------------------------
@@ -471,7 +471,7 @@ done:
  *
  * Modifications:
  *              Raymond Lu
- *              Wednesday, Febuary 9, 2005
+ *              Wednesday, February 9, 2005
  *              Made a copy of original datatype and do sorting and search
  *              on that copy, to protect the original order of members.
  *-------------------------------------------------------------------------
@@ -520,7 +520,7 @@ done:
  *
  * Modifications:
  *              Raymond Lu
- *              Wednesday, Febuary 9, 2005
+ *              Wednesday, February 9, 2005
  *              Made a copy of original datatype and do sorting and search
  *              on that copy, to protect the original order of members.
  *-------------------------------------------------------------------------

@@ -1490,7 +1490,7 @@ H5D__virtual_set_extent_unlim(const H5D_t *dset)
                     if(H5S_extent_copy(storage->list[i].source_select, storage->list[i].source_dset.dset->shared->space) < 0)
                         HGOTO_ERROR(H5E_DATASET, H5E_CANTCOPY, FAIL, "can't copy source dataspace extent")
 
-                    /* Get source space dimenstions */
+                    /* Get source space dimensions */
                     if(H5S_get_simple_extent_dims(storage->list[i].source_select, curr_dims, NULL) < 0)
                         HGOTO_ERROR(H5E_DATASET, H5E_CANTGET, FAIL, "can't get source space dimensions")
 
@@ -1912,7 +1912,7 @@ H5D__virtual_init_all(const H5D_t *dset)
                     if(H5S_extent_copy(storage->list[i].source_select, storage->list[i].source_dset.dset->shared->space) < 0)
                         HGOTO_ERROR(H5E_DATASET, H5E_CANTCOPY, FAIL, "can't copy source dataspace extent")
 
-                    /* Get source space dimenstions */
+                    /* Get source space dimensions */
                     if(H5S_get_simple_extent_dims(storage->list[i].source_select, source_dims, NULL) < 0)
                         HGOTO_ERROR(H5E_DATASET, H5E_CANTGET, FAIL, "can't get source space dimensions")
 
@@ -2500,7 +2500,7 @@ H5D__virtual_post_io(H5O_storage_virtual_t *storage)
 /*-------------------------------------------------------------------------
  * Function:    H5D__virtual_read_one
  *
- * Purpose:     Read from a singe source dataset in a virtual dataset.
+ * Purpose:     Read from a single source dataset in a virtual dataset.
  *
  * Return:      Non-negative on success/Negative on failure
  *
@@ -2689,7 +2689,7 @@ done:
 /*-------------------------------------------------------------------------
  * Function:    H5D__virtual_write_one
  *
- * Purpose:     Write to a singe source dataset in a virtual dataset.
+ * Purpose:     Write to a single source dataset in a virtual dataset.
  *
  * Return:      Non-negative on success/Negative on failure
  *

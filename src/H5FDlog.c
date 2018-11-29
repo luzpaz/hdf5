@@ -1496,7 +1496,7 @@ H5FD_log_write(H5FD_t *_file, H5FD_mem_t type, hid_t H5_ATTR_UNUSED dxpl_id, had
     if(file->fa.flags & H5FD_LOG_LOC_WRITE) {
         HDfprintf(file->logfp, "%10a-%10a (%10Zu bytes) (%s) Written", orig_addr, (orig_addr + orig_size) - 1, orig_size, flavors[type]);
 
-        /* Check if this is the first write into a "default" section, grabbed by the metadata agregation algorithm */
+        /* Check if this is the first write into a "default" section, grabbed by the metadata aggregation algorithm */
         if(file->fa.flags & H5FD_LOG_FLAVOR) {
             if((H5FD_mem_t)file->flavor[orig_addr] == H5FD_MEM_DEFAULT) {
                 HDmemset(&file->flavor[orig_addr], (int)type, orig_size);

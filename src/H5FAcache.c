@@ -952,7 +952,7 @@ END_FUNC(STATIC)   /* end H5FA__cache_dblock_free_icr() */
  *		file space block set.
  *
  *		This function is needed when the data block is paged, as 
- *		the datablock header and all its pages are allocted as a
+ *		the datablock header and all its pages are allocated as a
  *		single contiguous chunk of file space, and must be 
  *		deallocated the same way.
  *

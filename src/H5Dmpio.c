@@ -2378,7 +2378,7 @@ done:
  *
  *              1) Each process provides two piece of information for all chunks having selection
  *                 a) chunk index
- *                 b) wheather this chunk is regular(for MPI derived datatype not working case)
+ *                 b) whether this chunk is regular(for MPI derived datatype not working case)
  *
  *              2) Gather all the information to the root process
  *

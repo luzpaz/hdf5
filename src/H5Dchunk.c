@@ -960,7 +960,7 @@ H5D__chunk_init(H5F_t *f, const H5D_t *dset, hid_t dapl_id)
             if( !(scaled_power2up = H5VM_power2up(rdcc->scaled_dims[u])) )
                 HGOTO_ERROR(H5E_DATASET, H5E_CANTGET, FAIL, "unable to get the next power of 2")
 
-            /* Inital 'power2up' values for scaled dimensions */
+            /* Initial 'power2up' values for scaled dimensions */
             rdcc->scaled_power2up[u] = scaled_power2up;
 
             /* Number of bits required to encode scaled dimension size */
@@ -3291,7 +3291,7 @@ H5D__chunk_cache_prune(const H5D_t *dset, size_t size)
      * traversing the list when pointer pN reaches wN percent of the original
      * list.  In other words, preemption method N gets to consider entries in
      * approximate least recently used order w0 percent before method N+1
-     * where 100% means tha method N will run to completion before method N+1
+     * where 100% means the method N will run to completion before method N+1
      * begins.  The pointers participating in the list traversal are each
      * given a chance at preemption before any of the pointers are advanced.
      */

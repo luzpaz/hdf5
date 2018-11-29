@@ -2558,7 +2558,7 @@ H5S__get_select_hyper_blocklist(H5S_t *space, hbool_t internal, hsize_t startblo
         hbool_t done;               /* Whether we are done with the iteration */
         unsigned u;                 /* Counter */
 
-        /* Set some convienence values */
+        /* Set some convenience values */
         ndims = space->extent.rank;
         fast_dim = ndims - 1;
 
@@ -3108,7 +3108,7 @@ H5S__hyper_is_contiguous(const H5S_t *space)
         large_contiguous = TRUE;	/* assume true and reset if the dimensions don't match */
         small_contiguous = FALSE;	/* assume false initially */
 
-        /* Check for a "large contigous" block */
+        /* Check for a "large contiguous" block */
         for(u = 0; u < space->extent.rank; u++) {
             if(diminfo[u].count > 1) {
                 large_contiguous = FALSE;
@@ -8552,7 +8552,7 @@ H5S__hyper_get_seq_list_opt(const H5S_t *space, H5S_sel_iter_t *iter,
             /* Increment the offset and count for the other dimensions */
             temp_dim = (int)fast_dim - 1;
             while(temp_dim >= 0) {
-                /* Move to the next row in the curent dimension */
+                /* Move to the next row in the current dimension */
                 offset[temp_dim]++;
                 tmp_block[temp_dim]++;
 
@@ -8655,7 +8655,7 @@ loc += fast_dim_buf_off;
         /* Increment the offset and count for the other dimensions */
         temp_dim = (int)fast_dim - 1;
         while(temp_dim >= 0) {
-            /* Move to the next row in the curent dimension */
+            /* Move to the next row in the current dimension */
             offset[temp_dim]++;
             tmp_block[temp_dim]++;
 
@@ -8976,7 +8976,7 @@ H5S__hyper_get_seq_list_single(const H5S_t *space, H5S_sel_iter_t *iter,
 
                     /* Increment the offset and count for the other dimensions */
                     while(temp_dim >= 0) {
-                        /* Move to the next row in the curent dimension */
+                        /* Move to the next row in the current dimension */
                         offset[temp_dim]++;
                         tmp_block[temp_dim]++;
 
@@ -9522,7 +9522,7 @@ H5S__hyper_project_intersection(const H5S_t *src_space, const H5S_t *dst_space,
                 while(proj_len_rem > (size_t)0) {
                     /* Check for more than one full row (in every dim) and
                      * append multiple spans at once? -NAF */
-                    /* Append spans in higher dimensions if we're going ouside
+                    /* Append spans in higher dimensions if we're going outside
                      * the plane of the span currently being built (i.e. it's
                      * finished being built) */
                     for(i = proj_rank - 1; ((i > 0)

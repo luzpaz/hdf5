@@ -76,7 +76,7 @@
  *              the special "::" string.
  *
  * Return:      Success:    Non-negative
- *              Failture:   Negative
+ *              Failure:    Negative
  *
  *-------------------------------------------------------------------------
  */
@@ -109,7 +109,7 @@ done:
  *              Positive if one or more of the plugin types are enabled
  *
  * Return:      Success:    Non-negative
- *              Failture:   Negative
+ *              Failure:    Negative
  *
  *-------------------------------------------------------------------------
  */
@@ -139,7 +139,7 @@ done:
  * Purpose:     Insert a plugin search path at the end of the list.
  *
  * Return:      Success:    Non-negative
- *              Failture:   Negative
+ *              Failure:    Negative
  *
  *-------------------------------------------------------------------------
  */
@@ -172,7 +172,7 @@ done:
  * Purpose:     Insert a plugin search path at the beginning of the list.
  *
  * Return:      Success:    Non-negative
- *              Failture:   Negative
+ *              Failure:    Negative
  *
  *-------------------------------------------------------------------------
  */
@@ -247,7 +247,7 @@ done:
  *              other paths after the index.
  *
  * Return:      Success:    Non-negative
- *              Failture:   Negative
+ *              Failure:    Negative
  *
  *-------------------------------------------------------------------------
  */
@@ -283,11 +283,11 @@ done:
 /*-------------------------------------------------------------------------
  * Function:    H5PLremove
  *
- * Purpose:     Remove the plugin path at the specifed index and compact
+ * Purpose:     Remove the plugin path at the specified index and compact
  *              the list.
  *
  * Return:      Success:    Non-negative
- *              Failture:   Negative
+ *              Failure:    Negative
  *
  * Return:      Non-negative or success.
  *

@@ -303,13 +303,13 @@ H5Lmove(hid_t src_loc_id, const char *src_name, hid_t dst_loc_id,
             ((src_loc_id != H5L_SAME_LOC) ? src_loc_id : dst_loc_id), TRUE) < 0)
         HGOTO_ERROR(H5E_LINK, H5E_CANTSET, FAIL, "can't set access property list info")
 
-    /* Set location paramter for source object */
+    /* Set location parameter for source object */
     loc_params1.type                            = H5VL_OBJECT_BY_NAME;
     loc_params1.loc_data.loc_by_name.name       = src_name;
     loc_params1.loc_data.loc_by_name.lapl_id    = lapl_id;
     loc_params1.obj_type                        = H5I_get_type(src_loc_id);
 
-    /* Set location paramter for destination object */
+    /* Set location parameter for destination object */
     loc_params2.type                            = H5VL_OBJECT_BY_NAME;
     loc_params2.loc_data.loc_by_name.name       = dst_name;
     loc_params2.loc_data.loc_by_name.lapl_id    = lapl_id;
@@ -386,13 +386,13 @@ H5Lcopy(hid_t src_loc_id, const char *src_name, hid_t dst_loc_id,
     if(H5P_DEFAULT == lcpl_id)
         lcpl_id = H5P_LINK_CREATE_DEFAULT;
 
-    /* Set location paramter for source object */
+    /* Set location parameter for source object */
     loc_params1.type                            = H5VL_OBJECT_BY_NAME;
     loc_params1.loc_data.loc_by_name.name       = src_name;
     loc_params1.loc_data.loc_by_name.lapl_id    = lapl_id;
     loc_params1.obj_type                        = H5I_get_type(src_loc_id);
 
-    /* Set location paramter for destination object */
+    /* Set location parameter for destination object */
     loc_params2.type                            = H5VL_OBJECT_BY_NAME;
     loc_params2.loc_data.loc_by_name.name       = dst_name;
     loc_params2.loc_data.loc_by_name.lapl_id    = lapl_id;
